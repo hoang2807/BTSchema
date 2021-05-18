@@ -9,18 +9,18 @@ route.post("/post/create", async(req, res) => {
         data,
     });
 });
-route.get("post/get", async(req, res) => {
+route.get("/post/get", async(req, res) => {
     const data = await PostController.getPost();
     res.json({
         data,
     });
 });
-route.get("post/get/:id", async(req, res) => {
+route.get("/post/get/:id", async(req, res) => {
     const id = req.params.id;
     const data = await PostController.getPostId(id);
     res.json({ data });
 });
-route.put("post/put/:id", async(req, res) => {
+route.put("/post/put/:id", async(req, res) => {
     const id = req.params.id;
     const body = req.body;
     const data = await PostController.putPost(id, body);

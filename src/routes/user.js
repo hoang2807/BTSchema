@@ -7,7 +7,7 @@ route.get("/user/get", async(req, res) => {
         data,
     });
 });
-route.post("user/create", async(req, res) => {
+route.post("/user/create", async(req, res) => {
     const body = req.body;
     console.log(body);
     const data = await UserController.createUser(body);
@@ -26,14 +26,14 @@ route.post("/user/find", async(req, res) => {
         data,
     });
 });
-route.delete("user/delete/:id", async(req, res) => {
+route.delete("/user/delete/:id", async(req, res) => {
     const id = req.params.id;
     const data = await UserController.deleteUser(id);
     res.json({
         data,
     });
 });
-route.get("user/getlimit", async(req, res) => {
+route.get("/user/getlimit", async(req, res) => {
     const data = await UserController.findLimitUser();
     res.json({
         data,
