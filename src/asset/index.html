@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container a-container" id="a-container">
+            <form action="" class="form" id="a-form">
+                <h2 class="form_title title">Create User</h2>
+                <input id="create_username" class="form_input" type="text" placeholder="Username">
+                <input id="create_password" class="form_input" type="password" placeholder="Password">
+                <input id="create_email" class="form_input" type="text" placeholder="Email">
+                <input id="create_age" class="form_input" type="text" placeholder="Age">
+                <input id="create_school" class="form_input" type="text" placeholder="School">
+                <button class="form_button button submit" onclick="createUser()">Create</button>
+            </form>
+        </div>
+        <div class="container b-container" id="b-container">
+            <form action="" class="form" id="b-form">
+                <h2 class="form_title title">Find</h2>
+                <input id="find_username" class="form_input" type="text" placeholder="Username">
+                <input id="find_password" class="form_input" type="password" placeholder="Password">
+                <button class="form_button button submit" onclick="findUser()">Find</button>
+            </form>
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+
+</html>
