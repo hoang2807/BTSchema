@@ -12,7 +12,7 @@ const route = require("./routes");
 connectDB();
 
 app.use("/static", express.static(path.resolve(__dirname, "./asset")));
-app.use(express.json());
+// app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/api", route);
